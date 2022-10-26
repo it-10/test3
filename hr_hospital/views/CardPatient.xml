@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="cardpatient_model_tree" model="ir.ui.view">
+            <field name="name">cardpatient.model.tree ()</field>
+            <field name="model">cardpatient.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="cardpatient_model_form" model="ir.ui.view">
+            <field name="name">cardpatient.model.form ()</field>
+            <field name="model">cardpatient.model</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header></header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="cardpatient_model_act_window" model="ir.actions.act_window">
+            <field name="name">CardPatient</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cardpatient.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+</odoo>
