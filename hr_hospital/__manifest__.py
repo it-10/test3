@@ -17,11 +17,11 @@
     'data': [
         'security/ir.model.access.csv',
 
-        'views/menu.xml',
-        'views/Patient.xml',
-        'views/Doctor.xml',
-        'views/Diagnoz.xml',
-        'views/CardPatient.xml',
+        'views/hr_hospital_menus.xml',
+        'views/patient_views.xml',
+        'views/doctor_views.xml',
+        'views/diagnoz_views.xml',
+        'views/patient_card_views.xml',
 
     ],
     'demo': [

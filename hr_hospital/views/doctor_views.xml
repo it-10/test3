@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
         <record id="doctor_model_tree" model="ir.ui.view">
-            <field name="name">doctor.model.tree ()</field>
-            <field name="model">doctor.model</field>
+            <field name="name">hospital.doctor.tree ()</field>
+            <field name="model">hospital.doctor</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
@@ -11,8 +11,8 @@
         </record>
 
         <record id="doctor_model_form" model="ir.ui.view">
-            <field name="name">doctor.model.form ()</field>
-            <field name="model">doctor.model</field>
+            <field name="name">hospital.doctor.form ()</field>
+            <field name="model">hospital.doctor</field>
             <field name="arch" type="xml">
                 <form>
                     <header></header>
@@ -29,7 +29,7 @@
         <record id="doctor_model_act_window" model="ir.actions.act_window">
             <field name="name">Doctor</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">doctor.model</field>
+            <field name="res_model">hospital.doctor</field>
             <field name="view_mode">tree,form</field>
         </record>
 

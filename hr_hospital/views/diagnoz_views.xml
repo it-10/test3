@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+       <!-- Назва файлу з переглядами повина бути написана з маленької літери, та мати суффікс "_views" -->
+
         <record id="diagnoz_model_tree" model="ir.ui.view">
-            <field name="name">diagnoz.model.tree ()</field>
-            <field name="model">diagnoz.model</field>
+            <field name="name">hospital.diagnoz.tree ()</field>
+            <field name="model">hospital.diagnoz</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
@@ -11,8 +13,8 @@
         </record>
 
         <record id="diagnoz_model_form" model="ir.ui.view">
-            <field name="name">diagnoz.model.form ()</field>
-            <field name="model">diagnoz.model</field>
+            <field name="name">hospital.diagnoz.form ()</field>
+            <field name="model">hospital.diagnoz</field>
             <field name="arch" type="xml">
                 <form>
                     <header></header>
@@ -28,7 +30,7 @@
         <record id="diagnoz_model_act_window" model="ir.actions.act_window">
             <field name="name">Diagnoz</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">diagnoz.model</field>
+            <field name="res_model">hospital.diagnoz</field>
             <field name="view_mode">tree,form</field>
         </record>
 
